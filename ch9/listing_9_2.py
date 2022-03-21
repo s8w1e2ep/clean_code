@@ -1,8 +1,8 @@
 # After refactor
 def test_get_page_hierarchy_as_xml():
-	make_pages('PageOne', 'PageOne.ChildOne', 'PageTwo')
-
-	submit_request('root', 'type:pages')
+    make_pages('PageOne', 'PageOne.ChildOne', 'PageTwo')
+    
+    submit_request('root', 'type:pages')
 
     assert_response_is_xml()
     assert_response_contains(
