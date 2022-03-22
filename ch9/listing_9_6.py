@@ -1,8 +1,8 @@
 def get_state():
     state = ''
     state += 'H' if heater else 'h'
-    state += 'B' if heater else 'b'
-    state += 'C' if heater else 'c'
-    state += 'H' if heater else 'h'
-    state += 'L' if heater else 'l'
+    state += 'B' if blower else 'b'
+    state += 'C' if cooler else 'c'
+    state += 'H' if hi_temp_alarm else 'h'
+    state += 'L' if lo_temp_alarm else 'l'
     return state
